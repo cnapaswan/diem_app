@@ -1,0 +1,212 @@
+$happy: #efa900;
+$peaceful: #cbecfd;
+$love: #e37563;
+$magical: #b150a5;
+$bored: #c5beb3;
+$sad: #85929E;
+$angry: #732028;
+$headache: #1e4640;
+$fear: #BFC9CA;
+
+$comfortaa: 'comfortaa', sans-serif;
+$woman: #EC7063;
+$man: #5DADE2;
+$fontcolor:rgb(98, 101, 103);
+$impfontcolor: rgb(66, 73, 73);
+
+
+.container__registerboard {
+  background-color: rgba(255,255,255,0.8);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  // display: none;
+}
+
+.container__bubbleboard {
+  position: relative;
+  background-color: purple;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  flex-direction: column; 
+  
+}
+
+
+div.happy {background-color: $happy;}
+div.peaceful {background-color: $peaceful;}
+div.love {background-color: $love;}
+div.magical {background-color: $magical;}
+div.bored {background-color: $bored;}
+div.sad {background-color: $sad;}
+div.angry {background-color: $angry;}
+div.headache {background-color: $headache;}
+div.fear {background-color: $fear;}
+div.default-color{
+  background-color: transparent;
+  box-shadow: 0px 0px 10px 2px rgba(131, 145, 146,1);
+}
+
+.container__bubbleboard {
+  background-color: whitesmoke ;
+  border-radius: 30px;
+  box-shadow: 0px 0px 25px 1px rgba(156,156,156,1);
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 5%;
+  position: relative;
+}
+.container__registerboard {
+  background-color: rgba(113, 125, 126,0.7) ;
+  border-radius: 30px;
+  box-shadow: 0px 0px 25px 1px rgba(156,156,156,1);
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  padding: 5%;
+  position: absolute;
+  top: 0;
+}
+
+.container__registerboard > h1 {
+  font-family: $comfortaa;
+  color: whitesmoke;
+  font-size: 1.5em;
+  margin-bottom: 3%;
+}
+
+.nav__display-option {
+  width: 80%;
+  height: 15%;
+  box-shadow: 0px 0px 25px 1px rgba(204,204,204,1);
+  border-radius: 30px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.nav__display-option > a {
+  width: 20%;
+  height: 100%;
+  position: relative;
+  transform: translateY(35%); 
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 400;
+  background: transparent;
+  border: none;
+  color: #95A5A6;
+  text-decoration: none;
+}
+
+.nav__display-option > a:hover {
+  width: 20%;
+  height: 100%;
+  position: relative;
+  transform: translateY(35%); 
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 400;
+  background: transparent;
+  border: none;
+  color: $fontcolor;
+  cursor: pointer;
+}
+
+.container__bubble--flex {
+  overflow-y: auto;
+  padding: 2%;
+  background-color: transparent;
+  width: 80%;
+  height: 80%;
+  margin: 4% auto 0;
+  display: flex;
+  align-content: flex-start;
+  flex-wrap: wrap;
+}
+
+.large .bubble {
+  height: 15px;
+  width: 15px;
+}
+
+
+.small .bubble {
+  height: 10px;
+  width: 10px;
+}
+
+.bubble {
+  border-radius: 50%;
+  margin: 5px;
+}
+
+.bubble__past {
+  background-color: slategrey;
+}
+
+.container__mood-opt {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+  grid-template-rows: 33% 33% 33%;
+  padding: 5%;
+}
+
+.container__mood-opt > div {
+  width: 64px;
+  height: 64px;
+  text-align: center;
+  color: white;
+  font-size: 0.7em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  margin: 10% auto
+}
+
+.bubble__future {
+  border: 1px solid gray;
+}
+.container__note-ipt {
+  background-color:transparent;
+  width: 100%;
+  padding: 2%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.label__note {
+  font-size: 1rem;
+  margin-bottom: 2%;
+}
+
+.input__note {
+  background: whitesmoke;
+  border: none;
+  width: 80%;
+  padding-bottom: 10%;
+  margin-bottom: 4%;
+}
+
+.container__note-ipt > button {
+  width: 40%;
+  background-color: rgb(170, 183, 184);
+  border: none;
+  border-radius: 30px;
+  font-family: $comfortaa;
+  color: whitesmoke;
+}

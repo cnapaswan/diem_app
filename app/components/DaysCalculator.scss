@@ -1,0 +1,176 @@
+$comfortaa: 'comfortaa', sans-serif;
+$woman: #EC7063;
+$man: #5DADE2;
+$fontcolor:rgb(98, 101, 103);
+$impfontcolor: rgb(66, 73, 73);
+.container__dayscalculator {
+  background-color: whitesmoke;
+  border-radius: 30px;
+  box-shadow: 0px 0px 25px 1px rgba(156,156,156,1);
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 5%;
+}
+
+.container__dayscalculator > h1 {
+font-family: $comfortaa;
+color: $impfontcolor;
+font-size: 1.5em;
+margin-bottom: 3%;
+}
+
+
+.container__dayscalculator > select {
+  background: transparent;
+  width: 50%;
+  height: 15%;
+  font-family: $comfortaa;
+  border-radius: 30px;
+  border: none;
+  padding-left: 16%;
+  box-shadow: 0px 0px 25px 1px rgba(204,204,204,1);
+  margin: 1.5% 3% 3%;
+  color: $fontcolor;
+  position: relative;
+}
+
+.container__gender-opt {
+  width: 50%;
+  height: 15%;
+  border-radius: 30px;
+  box-shadow: 0px 0px 25px 1px rgba(204,204,204,1);
+  display: flex;
+  align-content: space-around;
+  margin: 1.5% 3% 3%;
+}
+
+.container__gender-opt > a {
+  width: 50%;
+  text-align: center;
+  vertical-align: middle;
+  font-size: 3rem;
+  font-weight: 800;
+  background: transparent;
+  border: none;
+  border-radius: 30px;
+  color: $fontcolor;
+  text-decoration: none;
+}
+
+.container__gender-opt > a#fm:hover {
+  transition: 1s;
+  font-size: 3rem;
+  font-weight: 800;
+  border: $woman 2px solid;
+  border-radius: 30px 0 0 30px;
+  text-align: center;
+  vertical-align: middle;
+  color: $woman;
+  background: #FDEDEC;
+}
+
+.container__gender-opt > a#m:hover {
+  transition: 1s;
+  font-size: 3rem;
+  font-weight: 800;
+  border: $man 2px solid;
+  border-radius: 0 30px 30px 0;
+  text-align: center;
+  vertical-align: middle;
+  color: $man;
+  background:#EBF5FB;
+}
+
+.container__gender-opt > a#fm:target {
+  transition: 1s;
+  font-size: 3rem;
+  font-weight: 800;
+  border: $woman 2px solid;
+  border-radius: 30px 0 0 30px;
+  text-align: center;
+  vertical-align: middle;
+  color: $woman;
+  background: #FDEDEC;
+}
+
+.container__gender-opt > a#m:target {
+  transition: 1s;
+  font-size: 3rem;
+  font-weight: 800;
+  border: $man 2px solid;
+  border-radius: 0 30px 30px 0;
+  text-align: center;
+  vertical-align: middle;
+  color: $man;
+  background:#EBF5FB;
+}
+
+.container__dayscalculator > input.datepicker {
+  background: transparent;
+  width: 50%;
+  height: 15%;
+  font-family: $comfortaa;
+  border-radius: 30px;
+  border: none;
+  padding-left: 16%;
+  box-shadow: 0px 0px 25px 1px rgba(204,204,204,1);
+  margin: 1.5% 3% 3%;
+  color: $fontcolor;
+}
+
+.label {
+  color: $fontcolor;
+  font-size: 0.8em;
+}
+
+.btn__getdays {
+  width: 30%;
+  height: 10%;
+  background-color: rgb(170, 183, 184);
+  border: none;
+  border-radius: 30px;
+  font-family: $comfortaa;
+  color: whitesmoke;
+  margin: 2%;
+}
+
+.btn__getdays:hover {
+  width: 30%;
+  height: 10%;
+  background-color: rgb(149, 165, 166);
+  border: none;
+  border-radius: 30px;
+  font-family: $comfortaa;
+  color: whitesmoke;
+  margin: 2%;
+}
+
+.btn__login {
+  position: absolute;
+  bottom: 75px;
+  background-color: transparent;
+  color: whitesmoke;
+  font-family: $comfortaa;
+  font-size: 1rem;
+  border: none;
+  font-weight: 700;
+}
+
+.btn__login:hover {
+  position: absolute;
+  bottom: 75px;
+  background-color: transparent;
+  color: #EAFAF1;
+  font-family: $comfortaa;
+  font-size: 1rem;
+  border: none;
+  font-weight: 700;
+}
+
+.hide {
+  display: none;
+}

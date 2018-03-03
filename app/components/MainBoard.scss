@@ -1,0 +1,33 @@
+$comfortaa: 'comfortaa', sans-serif;
+
+.container__mainboard {
+  background-color: whitesmoke;
+  border-radius: 30px;
+  width: 70%;
+  height: 80%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+
+.btn__logout {
+  position: absolute;
+  bottom: 75px;
+  background-color: transparent;
+  color: whitesmoke;
+  font-family: $comfortaa;
+  font-size: 1rem;
+  border: none;
+  font-weight: 700;
+}
+
+.btn__logout:hover {
+  position: absolute;
+  bottom: 75px;
+  background-color: transparent;
+  color: rgb(66, 73, 73);
+  font-family: $comfortaa;
+  font-size: 1em;
+  border: none;
+  font-weight: 700;
+}

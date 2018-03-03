@@ -31,7 +31,19 @@
     "webpack-dev-server": "^2.9.4"
   },
   "dependencies": {
+    "history": "^4.7.2",
+    "jquery": "^3.3.1",
+    "lodash": "^4.17.5",
+    "moment": "^2.20.1",
+    "moment-range": "^3.1.1",
     "react": "^16.0.0",
-    "react-dom": "^16.0.0"
+    "react-datepicker": "^1.2.1",
+    "react-day-picker": "^7.0.7",
+    "react-dom": "^16.0.0",
+    "react-input-calendar": "^0.5.2",
+    "react-overlay-loading": "^1.0.3",
+    "react-router-dom": "^4.2.2",
+    "react-simple-popover": "^0.2.4",
+    "save": "^2.3.2"
   }
 }

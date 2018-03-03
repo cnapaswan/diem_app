@@ -1,5 +1,6 @@
 import React from 'react'
-import PasswordInput from './PasswordInput'
+import MainBoard from './MainBoard'
+
 
 export default class App extends React.Component {
 
@@ -8,11 +9,7 @@ export default class App extends React.Component {
   }
 
   render() {
-    return <div>
-      <h1>hello world</h1>
-      <label>example component</label>
-      <PasswordInput />
-    </div>
+    return <MainBoard />
   }
 
 }
