@@ -55,7 +55,7 @@ export default class BubbleBoard extends React.Component {
   postToDb(){
     let {dob, country, gender} = this.props.data
     let localDomain = 'http://localhost:3000/users/new'
-    let hostedDomain = 'not available yet'
+    let hostedDomain = 'https://diem-api.herokuapp.com/users/new'
     let data = {
       email: this.state.email,
       password: this.state.password,
@@ -63,7 +63,7 @@ export default class BubbleBoard extends React.Component {
       gender: gender,
       country: country
     }
-    fetch(localDomain, {
+    fetch(hostedDomain, {
       body: JSON.stringify(data), 
       method: 'POST',
       headers: {
@@ -84,9 +84,9 @@ export default class BubbleBoard extends React.Component {
   getFilledBubbleJson(){
     console.log('userId', this.state.userId)
     let localDomain = 'http://localhost:3000/bubbles'
-    let hostedDomain = 'not available yet'
+    let hostedDomain = 'https://diem-api.herokuapp.com/bubbles'
     let PastBubbleData = {id: this.state.userId}
-      fetch(localDomain + '?id=' + this.state.userId)
+      fetch(hostedDomain + '?id=' + this.state.userId)
         .then(res => res.json()) 
         .then(res => this.setState({ PastBubbleData: res }))
   }

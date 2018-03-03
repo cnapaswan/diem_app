@@ -33,12 +33,12 @@ export default class LoginBoard extends React.Component {
 
   checkAuthenDb(){
     let localDomain = 'http://localhost:3000/login'
-    let hostedDomain = 'not available yet'
+    let hostedDomain = 'https://diem-api.herokuapp.com/login'
     let data = {
       email: this.state.email,
       password: this.state.password
     }
-    fetch(localDomain, {
+    fetch(hostedDomain, {
       body: JSON.stringify(data), 
       method: 'POST',
       headers: {
