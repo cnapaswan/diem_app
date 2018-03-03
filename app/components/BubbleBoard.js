@@ -121,7 +121,7 @@ export default class BubbleBoard extends React.Component {
   onSubmit(){
     let { presentMood, note } = this.state
     let localDomain = 'http://localhost:3000/bubble/new'
-    let hostedDomain = 'not available yet'
+    let hostedDomain = 'https://diem-api.herokuapp.com/bubble/new'
     let today = new Date()
     let data = {
       fulldate: today,
@@ -132,7 +132,7 @@ export default class BubbleBoard extends React.Component {
       note: this.state.note,
       user_id: this.state.userId
     }
-    fetch(localDomain, {
+    fetch(hostedDomain, {
       body: JSON.stringify(data), 
       method: 'POST',
       headers: {
