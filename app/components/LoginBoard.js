@@ -42,7 +42,8 @@ export default class LoginBoard extends React.Component {
       body: JSON.stringify(data), 
       method: 'POST',
       headers: {
-        'content-type': 'application/json'
+        'content-type': 'application/json',
+        'Accept': 'application/json'
       }
     })
     .then(res => res.json())
