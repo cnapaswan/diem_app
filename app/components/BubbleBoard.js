@@ -104,13 +104,13 @@ export default class BubbleBoard extends React.Component {
 
   // jw - 1
   onHandlePopupClick(e) {
-    this.setState({ isPopupOpen: !this.state.open });
+    this.setState({ isPopupOpen: !this.state.open })
   }
 
   // jw - 2
   onHandlePopupClose(e) {
-    console.log(this.refs);
-    this.setState({ isPopupOpen: false });
+    console.log(this.refs)
+    this.setState({ isPopupOpen: false })
   }
 
   onNoteInptChange(e){
@@ -180,7 +180,7 @@ export default class BubbleBoard extends React.Component {
     let startDate = new Date(regDateArr[0], regDateArr[1]-1, regDateArr[2])
     //get the end date - yesterday of user present
     let yesterday = new Date()
-    yesterday.setDate(yesterday.getDate() - 1);
+    yesterday.setDate(yesterday.getDate() - 1)
 
     let datesList = getDateList(startDate,yesterday)
     let pastBubble = this.state.PastBubbleData
@@ -194,6 +194,8 @@ export default class BubbleBoard extends React.Component {
 
     startingPoint = startingPoint < 0 ? 0 : startingPoint
     
+    console.log("datesList", datesList)
+    console.log("past bubbles", pastBubble)
     console.log("starting point", startingPoint)
     for (let i = startingPoint ; i < datesList.length ; i++) {
       let defaultDate = []
