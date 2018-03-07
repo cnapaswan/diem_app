@@ -194,22 +194,17 @@ export default class BubbleBoard extends React.Component {
 
     startingPoint = startingPoint < 0 ? 0 : startingPoint
     
-    console.log("datesList", datesList)
-    console.log("past bubbles", pastBubble)
-    console.log("starting point", startingPoint)
     for (let i = startingPoint ; i < datesList.length ; i++) {
       let defaultDate = []
       defaultDate.push(datesList[i].getFullYear())
-      defaultDate.push("0" + (datesList[i].getMonth()+1) )
-      defaultDate.push(datesList[i].getDate())
-      
+      defaultDate.push(("0" + (datesList[i].getMonth()+1)).slice(-2)) 
+      defaultDate.push(("0" + datesList[i].getDate()).slice(-2))
+
       let formattedDate = defaultDate.join("-")
 
       let matchFound = false;
       for(let j = 0 ; j < pastBubble.length ; j++){
-        console.log("formattedDate", formattedDate)
-        console.log("pastBubble[j].fulldate", pastBubble[j].fulldate)
-
+        
         if(formattedDate === pastBubble[j].fulldate){
           console.log(formattedDate)
           console.log(pastBubble[j].fulldate)
