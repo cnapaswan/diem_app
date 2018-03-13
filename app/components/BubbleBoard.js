@@ -192,8 +192,10 @@ export default class BubbleBoard extends React.Component {
     }
     let startingPoint = datesList.length - daysLimit
 
-    startingPoint = startingPoint < 0 ? 0 : startingPoint
-    
+    if (startingPoint < 0) { 
+      startingPoint = 0 
+    }
+
     for (let i = startingPoint ; i < datesList.length ; i++) {
       let defaultDate = []
       defaultDate.push(datesList[i].getFullYear())
@@ -220,7 +222,7 @@ export default class BubbleBoard extends React.Component {
                           />)
           
           matchFound = true
-          continue
+          break
         } 
       }
       if (!matchFound) {
