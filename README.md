@@ -19,10 +19,13 @@ The name ‘DIEM’ was inspired by the famous latin aphorism “Carpe diem” -
 1. Bundler: [Webpack](http://webpack.github.io/docs/), [Babel](https://babeljs.io)
 2. Language: [ES2015](https://babeljs.io/docs/learn-es2015/)
 3. Library: [React](https://reactjs.org/), [Sass](http://sass-lang.com/), [Mocha](https://mochajs.org)
+... ##backend app  **DIEM API [here](https://github.com/cnapaswan/diem_api)**
 
-##getting started
+## getting started locally
 1. clone this repo to your local
-2. ```npm start```
+2. CLI ```cd <folder_name>```
+2. CLI ```npm install```
+4. CLI ```npm start``` 
 
 ## Usage
 
