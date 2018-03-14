@@ -20,7 +20,7 @@ The name ‘DIEM’ was inspired by the famous latin aphorism “Carpe diem” -
 2. Language: [ES2015](https://babeljs.io/docs/learn-es2015/)
 3. Library: [React](https://reactjs.org/), [Sass](http://sass-lang.com/), [Mocha](https://mochajs.org)
 
-... ## backend app  **DIEM API [here](https://github.com/cnapaswan/diem_api)**
+... backend app  **DIEM API [here](https://github.com/cnapaswan/diem_api)**
 
 ## getting started locally
 1. clone this repo to your local
