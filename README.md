@@ -22,11 +22,14 @@ The name ‘DIEM’ was inspired by the famous latin aphorism “Carpe diem” -
 
 backend app  **DIEM API [here](https://github.com/cnapaswan/diem_api)**
 
-## getting started locally
+## getting started
 1. clone this repo to your local
 2. CLI ```cd <folder_name>```
 2. CLI ```npm install```
 4. CLI ```npm start``` 
+
+## production build
+1. CLI ```npm run build ```
 
 ## Usage
 
