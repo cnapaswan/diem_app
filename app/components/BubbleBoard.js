@@ -89,7 +89,23 @@ export default class BubbleBoard extends React.Component {
     let PastBubbleData = {id: this.state.userId}
       fetch(hostedDomain + '?id=' + this.state.userId)
         .then(res => res.json()) 
-        .then(res => this.setState({ PastBubbleData: res }))
+        .then(res => {
+
+          let presentMood = "default-color"
+          let today = new Date()
+          let defaultDate = []
+          defaultDate.push(today.getFullYear())
+          defaultDate.push(("0" + (today.getMonth()+1)).slice(-2)) 
+          defaultDate.push(("0" + today.getDate()).slice(-2))
+          let formattedDate = defaultDate.join("-")
+          for(let j = 0 ; j < res.length ; j++){
+            if(formattedDate === res[j].fulldate){
+              presentMood = res[j].mood
+            }
+          }
+  
+          this.setState({ PastBubbleData: res, presentMood: presentMood })
+        })
   }
 
 
@@ -208,9 +224,6 @@ export default class BubbleBoard extends React.Component {
       for(let j = 0 ; j < pastBubble.length ; j++){
         
         if(formattedDate === pastBubble[j].fulldate){
-          console.log(formattedDate)
-          console.log(pastBubble[j].fulldate)
-          console.log("found matched bubble")
           bubbleRows.push(<div
                             key={i}
                             className={`${pastBubble[j].mood} bubble bubble__past`}
@@ -246,7 +259,7 @@ export default class BubbleBoard extends React.Component {
       <div>
         <div
           onClick={this.onHandlePopupClick}   
-          className={`${this.state.presentMood} bubble `}
+          className={`${this.state.presentMood} today-glow bubble `}
           mood={this.state.presentMood}
           note="none"
           ref="anchor"
@@ -314,8 +327,7 @@ export default class BubbleBoard extends React.Component {
     return <div className="container__bubbleboard">
       {this.renderRegisterBoard()}
       <nav className="nav__display-option">
-        <a 
-           onClick={this.onLifeTimeBtn}>life</a>
+        <a onClick={this.onLifeTimeBtn}>life</a>
         <a onClick={this.onWeekBtn}>week</a>
         <a onClick={this.onMonthBtn}>month</a>
         <a onClick={this.onYearBtn}>year</a>
