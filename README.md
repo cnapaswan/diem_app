@@ -2,8 +2,7 @@
 
 We all know life is short, days were spent and some more to go on. 
 
-I build this app because the idea means a lot to me personally and I hope it could mean something to you too.
-The app allow user to see average days they might have left in their life, the calculation based on country of origin, gender and current age. 
+I build this app because the idea means a lot to me personally and I hope it could mean something to you too.The app allow user to see average days they might have left in their life, the calculation based on country of origin, gender and current age. 
 
 The name ‘DIEM’ was inspired by the famous latin aphorism “Carpe diem” - seize the day. It perfectly represents my idea and the functionality of this app
 
@@ -41,3 +40,6 @@ The name ‘DIEM’ was inspired by the famous latin aphorism “Carpe diem” -
     - week time // see how you last 7 days felt like
     
 
+## License
+
+MIT © [cnapaswan](https://github.com/cnapaswan)
